@@ -29,10 +29,12 @@ if (md5($monitor_id. $domain_id. $record_id. $callback_key. $created_at) != $che
     // 开始处理
     if ($status == 'Warn' || $status == 'Ok') {
         // 宕机恢复
+        
         // ----* 这里是您的代码 *----
         file_put_contents('log/monitor.log', "{$created_at} {$monitor_id} {$status}({$status_code}) {$domain}({$domain_id}) {$sub_domain}({$record_id}) {$record_line} {$ip}\n", FILE_APPEND);
     } elseif ($status == 'Down') {
         // 已经宕机
+        
         // ----* 这里是您的代码 *----
         file_put_contents('log/monitor.log', "{$created_at} {$monitor_id} {$status}({$status_code}) {$domain}({$domain_id}) {$sub_domain}({$record_id}) {$record_line} {$ip} {$reason}\n", FILE_APPEND);
     }
