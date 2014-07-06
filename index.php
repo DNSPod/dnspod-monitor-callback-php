@@ -2,8 +2,8 @@
 /*
  * Copyright 2006-2014 DNSPod, Inc.  All Rights Reserved.
  * 
- * @author		李院长
- * @email		mjj@dnspod.com
+ * @author      李院长
+ * @email       mjj@dnspod.com
  * @version     1.0.0
  */
 
